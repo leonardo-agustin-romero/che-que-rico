@@ -1,0 +1,1159 @@
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/*navegador*/
+body{
+    background-color: antiquewhite;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    /* height: 6rem; */
+    background-image:linear-gradient(to left,#B2EBF2, #E1BEE7);
+    padding: 15px;
+}
+header img{
+    margin-left: 10px;
+}
+
+
+.header__h1{
+    font-family: 'Titillium Web', sans-serif;
+    font-style: oblique;
+    color: #244b4b;
+    text-shadow: 3px 4px 8px #244b4b;
+    display: inline;
+    padding: 1rem;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+
+#header__logo{
+    display: inline;
+    box-sizing: border-box;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100%;
+    transition: all 1.5s;
+    margin: 0.5rem;
+}
+
+
+
+
+.header__nav{
+    box-sizing: border-box;
+    display: inline;
+    display: flex;
+    align-items: center;
+}
+
+.header__nav__ul{
+    list-style: none;
+    box-sizing: border-box;
+    display: inline;
+    }
+
+.header__nav__ul--li{
+    display: inline;
+    box-sizing: border-box;
+    text-decoration: none;
+    position: relative;
+    padding: 2rem;
+    }
+
+.header__nav__ul--li--a{
+    text-decoration: none;
+    box-sizing: border-box;
+    display: inline;
+}
+
+
+.portada{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.videoPortada{
+    box-sizing: border-box;
+    width: 100%;
+    height: 33rem;
+}
+
+
+/*main*/
+
+#main__productos{
+    border-radius: 4%;
+    box-sizing: border-box;
+    background-color: #B2EBF2;
+    line-height: 1.2;
+    font-weight: 300;
+    position: relative;
+    margin-top: 4rem;
+    width: 10rem;
+    height: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    list-style: none;
+    margin-left: 1rem;
+}
+
+#main__productos ul {
+    list-style: none;
+    margin-left: 5px;
+}
+
+.main__productos--titulo:hover{
+    color:blue
+}
+
+
+#main__quienessomos{
+    text-align:center;
+    margin: 1rem;
+    font-family: 'Titillium Web', sans-serif;
+    box-sizing: border-box;
+    font-size: 3rem;
+}
+
+.main__secciondos{
+    background-color: #B2EBF2;
+    margin: 2rem 0rem;
+    font-family: 'Titillium Web', sans-serif;
+    width: 60%;
+    text-align:center;
+    margin-left: 20%;
+}
+
+.main__secciontres{
+    background-color: #B2EBF2;
+    margin: 2rem 0rem;
+    font-family: 'Titillium Web', sans-serif;
+    width: 60%;
+    text-align:center;
+    margin-left: 20%;
+}
+
+.container{
+    overflow: hidden;
+}
+
+
+/*
+.videoChericos{
+    box-sizing: border-box;
+    display: inline;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.videoChericos iframe{
+    display: inline;
+    box-sizing: border-box;
+    position: relative;
+    width: 36rem;
+    height: 36rem;
+}
+
+.videoChericos video{
+    display: inline;
+    box-sizing: border-box;
+    position: relative;
+    width: 36rem;
+    height: 36rem;
+}*/
+
+
+.mediosPagos{
+    box-sizing: border-box;
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin-right: 2rem;
+}
+
+.mediosPagos li{
+    margin-left: 1rem;
+}
+
+
+.tortaArtesanales{
+    text-align:center;
+    margin: 3rem;
+    font-family: 'Titillium Web', sans-serif;
+    box-sizing: border-box;
+}
+
+.tortaArtesanal{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+
+
+.fotoProductos{
+    width: 400px;
+    height: 400px;
+}
+
+.fotoProducto img:hover{
+    transform: scale(1.5);
+    box-shadow:12px 20px 20px 0px #484949;
+}
+
+
+
+
+.subTituloImagenes{
+    text-align:center;
+    margin: 3rem;
+    font-family: 'Titillium Web', sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+.fotoProducto img{
+    display: inline;
+    box-sizing: border-box;
+    position: relative;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 5%;
+    transition: all 1s;
+}
+
+.fotoProducto{
+    margin-left: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fotoProducto div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.subMenuProducto{
+    position: absolute;
+    display: none;
+    border: solid 1px black;
+    left: 2rem;
+    margin-top: 0.7rem;
+    background-image:linear-gradient(to left,#B2EBF2, #E1BEE7);
+    z-index: 50;
+}
+
+.header__nav__ul--li:hover .subMenuProducto{
+    display: block;
+}
+
+/*seccion de nosotros*/
+
+.nosotrosSeccion1{
+    padding: 20px;
+    margin: 4rem;
+}
+
+.nosotrosSeccion2{
+    padding: 20px;
+    margin: 4rem;
+}
+
+
+/*tabla de producto*/
+
+.main__tablaproducto{
+    padding: 20px;
+    margin: 4rem;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+}
+
+
+.main__tablaproducto tr{
+    width: 100%;
+    align-items: center;
+    padding: 1px;
+}
+
+.main__tablaproducto tr th{
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+
+.main__tablaproducto tr td{
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+
+
+
+
+.subMenuProducto li{
+    display: block;
+    margin-top: 1rem;
+}
+
+.subMenuProducto li a{
+    list-style: none;
+    color: black;
+    text-decoration: none;
+}
+
+.subMenuProducto li a:hover{
+    color:blue
+}
+
+
+.grid{
+    width: 100px;
+    border: 1px solid black;
+}
+
+.videoGrid{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "video1 video4"
+    "video2 video3";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+}
+.video{
+    width: 300px;
+    height: 300px;
+    margin: 1rem;
+}
+
+.video1{
+    grid-area: video1;
+}
+.video2{
+    grid-area: video2;
+}
+.video3{
+    grid-area: video3;
+}
+.video4{
+    grid-area: video4;
+}
+
+
+.subTituloTorta{
+    text-align:center;
+    margin: 3rem;
+    font-family: 'Titillium Web', sans-serif;
+    box-sizing: border-box;
+}
+
+
+/*grid imagenes*/
+
+.fotoTematicas{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    justify-items: center;
+    grid-template-areas:
+    "foto1 foto2 foto3 foto4"
+    "foto5 foto6 foto7 foto8"
+    "foto9 foto10 foto11 foto12"
+    "foto13 foto14 foto15 foto16";
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 90px;
+    margin-bottom: 90px;
+}
+
+.fotoTematicas img{
+    transition: all 1s;
+    border-radius: 5%;
+}
+
+
+.fotoTematicas img:hover{
+
+transform: scale(1.1);
+box-shadow:12px 20px 20px 0px #484949;
+}
+
+
+.card1{
+    grid-area: foto1;
+}
+
+.card2{
+    grid-area: foto2;
+}
+
+.card3{
+    grid-area: foto3;
+}
+
+.card4{
+    grid-area: foto4;
+}
+
+.card5{
+    grid-area: foto5;
+}
+
+.card6{
+    grid-area: foto6;
+}
+
+.card7{
+    grid-area: foto7;
+}
+
+.card8{
+    grid-area: foto8;
+}
+
+.card9{
+    grid-area: foto9;
+}
+
+.card10{
+    grid-area: foto10;
+}
+
+.card11{
+    grid-area: foto11;
+}
+
+.card12{
+    grid-area: foto12;
+}
+
+.card13{
+    grid-area: foto13;
+}
+
+.card14{
+    grid-area: foto14;
+}
+
+.card15{
+    grid-area: foto15;
+}
+
+.card16{
+    grid-area: foto16;
+}
+
+
+.subTematica img{
+    width: 200px;
+    height: 200px;
+}
+
+.subTematica h2{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+
+
+.subTematica p{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+.subTematica{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;;
+}
+
+
+
+/*footer*/
+
+footer{
+    background-image:linear-gradient(to left,#B2EBF2, #E1BEE7);
+    padding-top: 20px;
+}
+
+
+.footer__redes{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    padding-top: 2rem;
+}
+
+
+
+.footer__redes__sociales{
+    display: inline;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+.footer__redes__sociales li{
+    display: inline;
+    margin-left: 1rem;
+}
+
+.footer__copyright{
+    display: block;
+    margin: 0;
+    text-align: center;
+    padding: 30px;
+}
+
+.formularioPrueba{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    margin: 1rem;
+    padding: 1rem;
+    align-content: center;
+    margin-left: 30%;
+}
+
+.formularioPrueba div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 5px;
+}
+
+
+.submit{
+    background-color: rgb(12, 224, 12);
+    color: black;
+    border: 1px solid rgb(12, 224, 12);
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10%;
+}
+
+.BotonModal{
+    color: white;
+}
+
+
+.BotonModal:hover{
+    color: white;
+}
+
+#ModalPrincipal{
+    display: flex;
+    margin: 2rem;
+    justify-content: center;
+}
+
+
+.main__tortaArtesanal{
+    display: flex;
+    justify-content: center;
+}
+
+.main__tortaArtesanal img{
+        width: 300px;
+        height: 300px;
+}
+
+
+
+
+
+@media only screen and (max-width: 480px) and (min-width: 5px){
+
+
+    header{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        /* height: 1.5rem; */
+        padding: 15px;
+    }
+    
+    .header__h1{
+        font-family: 'Titillium Web', sans-serif;
+        font-style: oblique;
+        color: #5d9b9b;
+        text-shadow: 3px 4px 8px #5d9b9b;
+        display: inline;
+        align-items: center;
+        font-size: 0.4rem;
+        padding: 3px;
+    }
+
+    #header__logo{
+        display: inline;
+        box-sizing: border-box;
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    
+    .header__nav__ul--li{
+        display: inline;
+        box-sizing: border-box;
+        text-decoration: none;
+        position: relative;
+        justify-content: space-between;
+        padding: 0.5rem;
+        }
+
+    .header__nav__ul--li--a{
+        text-decoration: none;
+        box-sizing: border-box;
+        display: inline;
+        font-size: 5px;
+        justify-content: space-between;
+    }
+    
+
+    .slider{
+        overflow: hidden;
+    }
+    
+    .fotoProducto img{
+        display: inline;
+        box-sizing: border-box;
+        position: relative;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 5%;
+    }
+
+    .fotoProducto{
+        margin-left: 0.2rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .subTematica img{
+        width: 56px;
+        height: 56px;
+    }
+    
+    .subTematica h2{
+        text-align: center;
+        padding: 3px 0;
+        font-size: 8px;
+    }
+    
+
+    .subTematica p{
+        text-align: center;
+        padding: 10px 0;
+        font-size: 4px;
+    }
+    
+    .subTematica{
+        width: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .content-all{
+        width: 100%;
+        margin: auto;
+        perspective: 1000px;
+        position: relative;
+        margin-top: 150px;
+        height: 200px;
+        overflow: hidden;
+    }
+    
+    .content-carrousel img{
+        width: 100%;
+        
+    }
+    
+    .video{
+        width: 120px;
+        height: 120px;
+        margin: 1rem;
+    }
+
+    .container{
+        width: 100% !important; /*el important por culpa de bootstrap que tiene un important en width 800px*/
+    }
+
+    
+    .fotoProductos{
+        width: 100%;
+    }
+
+    .videoGrid{
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+        "video1"
+        "video2"
+        "video3"
+        "video4";
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+
+    .formularioPrueba{
+        display: block;
+        margin: 10px;
+        width: 90%;
+    }
+
+    .formularioPrueba div{
+        display: block;
+        margin: 10px;
+        width: 90%;
+        overflow: hidden;
+    }
+
+    .formularioPrueba div{
+        display: block;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px) and (min-width: 481px){
+
+
+
+    header{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        /* height: 2rem; */
+        padding: 15px;
+    }
+    
+    .header__h1{
+        font-family: 'Titillium Web', sans-serif;
+        font-style: oblique;
+        color: #5d9b9b;
+        text-shadow: 3px 4px 8px #5d9b9b;
+        display: inline;
+        padding: 0.1rem;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+
+    #header__logo{
+        display: inline;
+        box-sizing: border-box;
+        height: 2rem;
+        width: 2rem;
+    }
+    
+    .header__nav__ul--li{
+        display: inline;
+        box-sizing: border-box;
+        text-decoration: none;
+        position: relative;
+        padding: 0.8rem;
+        }
+
+    .header__nav__ul--li--a{
+        text-decoration: none;
+        box-sizing: border-box;
+        display: inline;
+        font-size: 10px;
+    }
+    
+    .container{
+        overflow: hidden;
+    }
+    
+    
+
+
+
+    .fotoProducto img{
+        display: inline;
+        box-sizing: border-box;
+        position: relative;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 5%;
+    }
+    
+    .fotoProducto{
+        margin-left: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
+
+    .subTematica img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .subTematica{
+        width: 120px;
+    }
+
+    
+    .subTematica h2{
+        text-align: center;
+        padding: 5px 0;
+        font-size: 12px;
+    }
+    
+
+    .subTematica p{
+        text-align: center;
+        padding: 10px 0;
+        font-size: 8px;
+    }
+    
+    .subTematica{
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .content-all{
+        width: 100%;
+        margin: auto;
+        perspective: 1000px;
+        position: relative;
+        margin-top: 150px;
+        height: 200px;
+    }
+    
+    .content-carrousel img{
+        width: 100%;
+        
+    }
+    
+    .videoChericos video1{
+        width: 200px;
+        height: 200px;
+    }
+    .videoChericos video2{
+        width: 200px;
+        height: 200px;
+    }
+
+    .videoChericos video3{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .videoChericos video4{
+        width: 200px;
+        height: 200px;
+    }
+
+    .video{
+        width: 160px;
+        height: 160px;
+        margin: 1rem;
+    }
+
+    .formularioPrueba{
+        display: block;
+        margin: 10px;
+        width: 60%;
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 980px)and (min-width: 769px){
+
+
+
+    header{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        /* height: 2.5rem; */
+        padding: 15px;
+    }
+    
+    .header__h1{
+        font-family: 'Titillium Web', sans-serif;
+        font-style: oblique;
+        color: #5d9b9b;
+        text-shadow: 3px 4px 8px #5d9b9b;
+        display: inline;
+        padding: 0.2rem;
+        align-items: center;
+        font-size: 1.2rem;
+    }
+
+    #header__logo{
+        display: inline;
+        box-sizing: border-box;
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    
+    .header__nav__ul--li{
+        display: inline;
+        box-sizing: border-box;
+        text-decoration: none;
+        position: relative;
+        padding: 1.5rem;
+        }
+
+    .header__nav__ul--li--a{
+        text-decoration: none;
+        box-sizing: border-box;
+        display: inline;
+        font-size: 12px;
+    }
+    
+
+    .container{
+        overflow: hidden;
+    }
+    
+    
+
+
+    .subTematica img{
+        width: 120px;
+        height: 120px;
+    }
+    
+    .subTematica h2{
+        text-align: center;
+        padding: 8px 0;
+        font-size: 16px;
+    }
+    
+
+    .fotoProducto img{
+        display: inline;
+        box-sizing: border-box;
+        position: relative;
+        width: 8rem;
+        height: 8rem;
+        border-radius: 5%;
+    }
+    
+    .fotoProducto{
+        margin-left: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .subTematica p{
+        text-align: center;
+        padding: 10px 0;
+        font-size: 12px;
+    }
+    
+    .subTematica{
+        width: 160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .content-all{
+        width: 100%;
+        margin: auto;
+        perspective: 1000px;
+        position: relative;
+        margin-top: 150px;
+        height: 200px;
+    }
+    
+    .content-carrousel img{
+        width: 100%;
+        
+    }
+    .video{
+        width: 220px;
+        height: 220px;
+        margin: 1rem;
+    }
+
+    .formularioPrueba{
+        display: block;
+        margin: 10px;
+        width: 60%;
+    }
+
+
+}
+
+.container{
+margin: auto;
+background-color: white;
+width: 100%;
+padding: 30px;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider{
+position: relative;
+width: 100%;
+height: 300px;
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:#fff;
+}
+
+ul.slider li img{
+width: 100%;
+height: 300px;
+object-fit: cover;
+}
+
+ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.menu{
+text-align: center;
+margin: 20px;
+}
+
+.menu li{
+display: inline-block;
+text-align: center;
+}
+
+.menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    width: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+.content-all{
+    width: 210px;
+    margin: auto;
+    perspective: 1000px;
+    position: relative;
+    margin-top: 150px;
+    height: 200px;
+}
+
+.content-carrousel{
+    width: 100%;
+    position: absolute;
+    animation: rotar 25s infinite linear;
+    transform-style: preserve-3d;
+}
+
+.content-carrousel:hover{
+    animation-play-state: paused;
+}
+
+.content-carrousel figure{
+    width: 100%;
+    height: 115px;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+
+
+.content-carrousel figure:nth-child(1){transform: rotateY(0deg) translateZ(300px);}
+
+.content-carrousel figure:nth-child(2){transform: rotateY(40deg) translateZ(300px);}
+
+.content-carrousel figure:nth-child(3){transform: rotateY(80deg) translateZ(300px);}
+
+.content-carrousel figure:nth-child(4){transform: rotateY(120deg) translateZ(300px);}
+
+.content-carrousel figure:nth-child(5){transform: rotateY(160deg) translateZ(300px);}
+
+.content-carrousel figure:nth-child(6){transform: rotateY(200deg) translateZ(300px);}
+
+.content-carrousel figure:nth-child(7){transform: rotateY(240deg) translateZ(300px);}
+
+.content-carrousel figure:nth-child(8){transform: rotateY(280deg) translateZ(300px);}
+
+.content-carrousel figure:nth-child(9){transform: rotateY(320deg) translateZ(300px);}
+
+.content-carrousel figure:nth-child(10){transform: rotateY(360deg) translateZ(300px);}
+
+.content-carrousel img{
+    width: 100%;
+    
+}
+
+
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+}
+.MapaUbicacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+

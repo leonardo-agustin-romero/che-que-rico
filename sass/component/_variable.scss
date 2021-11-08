@@ -1,0 +1,69 @@
+/*variable*/
+
+
+
+$color-principal:#B2EBF2;
+$color-secundario:blue;
+$color-tres: red;
+$color-cuatro:white;
+
+
+/*estend*/
+
+%flexboxrow{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+%botones{
+    border: solid 1px black;
+    border-radius: 4px;
+    background-color:$color-principal;
+}
+
+
+/*mixins*/
+
+@mixin dimenciones($ancho, $alto) {
+    width:$ancho;
+    height:$alto;
+}
+
+
+/*lista*/
+
+$colores:
+/*1*/   red,
+/*2*/  blue,
+/*3*/  white;
+
+
+/*maps*/
+
+$coloresmaps :(
+    primario:antiquewhite,
+    secundario:rgb(48, 129, 48)
+    );
+
+
+/*operaciones*/
+
+$anchototal: 100%;
+$anchomitad: $anchototal/2;
+$anchocuarto: $anchototal/4;
+
+
+/*condicionales*/
+
+@mixin colorcondicional ($anchos) {
+    width: $anchos;
+    @if $anchos == 50px{
+        background-color: map-get($coloresmaps, 1);
+    }@else{
+        background-color: antiquewhite;
+    }
+    
+}

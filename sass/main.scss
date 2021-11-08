@@ -1,0 +1,288 @@
+@import 'component/variable';
+
+@import 'component/header';
+@import 'component/carrousel';
+@import 'component/contacto';
+@import 'component/grid';
+@import 'component/footer';
+@import 'component/mediaqueries';
+@import 'component/error404';
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    // background-color: $color-principal;
+    // @extend %flexboxrow;
+}
+/*navegador*/
+body{
+    background-color:map-get($coloresmaps, primario);
+}
+
+
+
+.portada{
+    margin: 0;
+    padding: 0;
+    width: $anchototal;
+}
+
+.videoPortada{
+    box-sizing: border-box;
+    @include dimenciones(100%, 33rem)
+}
+
+
+/*main*/
+
+#main__productos{
+    border-radius: 4%;
+    box-sizing: border-box;
+    background-color:$color-principal;
+    line-height: 1.2;
+    font-weight: 300;
+    position: relative;
+    @include dimenciones(10rem,14rem);
+    @extend %flexboxrow;
+    align-content: space-around;
+    list-style: none;
+    margin-left: 1rem;
+    ul{
+        list-style: none;
+        margin-left: 5px;
+    }
+    &--titulo:hover{
+        color:nth($colores,2);
+    }
+}
+
+
+#main__quienessomos{
+    text-align:center;
+    margin: 1rem;
+    font-family: 'Titillium Web', sans-serif;
+    box-sizing: border-box;
+    font-size: 3rem;
+}
+
+.main__secciondos{
+    background-color:$color-principal;
+    margin: 2rem 0rem;
+    font-family: 'Titillium Web', sans-serif;
+    width: 60%;
+    text-align:center;
+    margin-left: 20%;
+}
+
+.main__secciontres{
+    background-color:$color-principal;
+    margin: 2rem 0rem;
+    font-family: 'Titillium Web', sans-serif;
+    width: 60%;
+    text-align:center;
+    margin-left: 20%;
+}
+
+
+.MapaUbicacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+
+
+
+.mediosPagos{
+    box-sizing: border-box;
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin-right: 2rem;
+    li{
+        margin-left: 1rem;
+    }
+}
+
+
+.tortaArtesanales{
+    text-align:center;
+    margin: 3rem;
+    font-family: 'Titillium Web', sans-serif;
+    box-sizing: border-box;
+}
+
+.tortaArtesanal{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+
+
+.fotoProductos{
+    @include dimenciones(400px,400px);
+    img:hover{
+        transform: scale(1.5);
+        box-shadow:12px 20px 20px 0px #484949;
+    }
+}
+
+
+
+
+
+.subTituloImagenes{
+    text-align:center;
+    margin: 3rem;
+    font-family: 'Titillium Web', sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+
+.fotoProducto{
+    margin-left: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    img{
+        display: inline;
+        box-sizing: border-box;
+        position: relative;
+        width: 12rem;
+        height: 12rem;
+        border-radius: 5%;
+        transition: all 1s;
+    }
+    div{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+
+.subMenuProducto{
+    position: absolute;
+    display: none;
+    border: solid 1px black;
+    left: 2rem;
+    margin-top: 0.7rem;
+    background-image:linear-gradient(to left,#B2EBF2, #E1BEE7);
+    z-index: 50;
+}
+
+.header__nav__ul--li:hover .subMenuProducto{
+    display: block;
+}
+
+/*seccion de nosotros*/
+
+.nosotrosSeccion1{
+    padding: 20px;
+    margin: 4rem;
+}
+
+.nosotrosSeccion2{
+    padding: 20px;
+    margin: 4rem;
+}
+
+
+
+.subMenuProducto li{
+    display: block;
+    margin-top: 1rem;
+    a{
+        list-style: none;
+        color: black;
+        text-decoration: none;
+        &:hover{
+            color:nth($colores,2);
+        }
+    }
+}
+
+
+
+.subTituloTorta{
+    text-align:center;
+    margin: 3rem;
+    font-family: 'Titillium Web', sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+
+.subTematica{
+    width: 200px;
+    @extend %flexboxrow;
+    align-items: center;
+    img{
+        width: 200px;
+        height: 200px;
+    }
+    h2{
+        text-align: center;
+        padding: 10px 0;
+        font-size: 20px;
+    }
+    p{
+        text-align: center;
+        padding: 10px 0;
+        font-size: 16px;
+    }
+}
+
+
+
+.formularioPrueba{
+    box-sizing: border-box;
+    @extend %flexboxrow;
+    width: 40%;
+    margin: 1rem;
+    padding: 1rem;
+    align-content: center;
+    margin-left: 30%;
+}
+
+.formularioPrueba div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 5px;
+}
+
+
+.submit{
+    background-color:map-get($coloresmaps, secundario);
+    color: black;
+    border: 1px solid map-get($coloresmaps, secundario);
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10%;
+}
+
+.BotonModal{
+    color:nth($colores,3);
+}
+
+
+.BotonModal:hover{
+    color:nth($colores,3);
+}
+
+#ModalPrincipal{
+    display: flex;
+    margin: 2rem;
+    justify-content: center;
+}
+
+
+

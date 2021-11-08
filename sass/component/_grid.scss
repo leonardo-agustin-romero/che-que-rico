@@ -1,0 +1,135 @@
+
+
+
+
+
+
+/*grid imagenes*/
+
+.fotoTematicas{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    justify-items: center;
+    grid-template-areas:
+    "foto1 foto2 foto3 foto4"
+    "foto5 foto6 foto7 foto8"
+    "foto9 foto10 foto11 foto12"
+    "foto13 foto14 foto15 foto16";
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 90px;
+    margin-bottom: 90px;
+    img{
+        transition: all 1s;
+        border-radius: 5%;
+        &:hover{
+            transform: scale(1.1);
+            box-shadow:12px 20px 20px 0px #484949;
+        }
+    }
+}
+
+
+
+.card1{
+    grid-area: foto1;
+}
+
+.card2{
+    grid-area: foto2;
+}
+
+.card3{
+    grid-area: foto3;
+}
+
+.card4{
+    grid-area: foto4;
+}
+
+.card5{
+    grid-area: foto5;
+}
+
+.card6{
+    grid-area: foto6;
+}
+
+.card7{
+    grid-area: foto7;
+}
+
+.card8{
+    grid-area: foto8;
+}
+
+.card9{
+    grid-area: foto9;
+}
+
+.card10{
+    grid-area: foto10;
+}
+
+.card11{
+    grid-area: foto11;
+}
+
+.card12{
+    grid-area: foto12;
+}
+
+.card13{
+    grid-area: foto13;
+}
+
+.card14{
+    grid-area: foto14;
+}
+
+.card15{
+    grid-area: foto15;
+}
+
+.card16{
+    grid-area: foto16;
+}
+
+
+
+
+.grid{
+    width: 100px;
+    border: 1px solid black;
+}
+
+.videoGrid{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "video1 video4"
+    "video2 video3";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+}
+.video{
+    width: 300px;
+    height: 300px;
+    margin: 1rem;
+}
+
+.video1{
+    grid-area: video1;
+}
+.video2{
+    grid-area: video2;
+}
+.video3{
+    grid-area: video3;
+}
+.video4{
+    grid-area: video4;
+}
+
