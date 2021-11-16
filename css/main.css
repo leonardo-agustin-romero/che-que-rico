@@ -384,15 +384,15 @@ footer {
     justify-content: center;
     align-items: center; }
   .content-all {
-    width: 100%;
+    width: 90%;
     margin: auto;
     perspective: 1000px;
     position: relative;
-    margin-top: 150px;
+    margin-top: 50px;
     height: 200px;
     overflow: hidden; }
   .content-carrousel img {
-    width: 100%; }
+    width: 60%; }
   .video {
     width: 120px;
     height: 120px;
