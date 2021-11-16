@@ -13,8 +13,9 @@
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
+        align-items: center;
         // height: 1.5rem;
-        padding: 15px;
+        padding: 10px;
     }
     
     .header__h1{
@@ -24,8 +25,9 @@
         text-shadow: 3px 4px 8px #5d9b9b;
         display: inline;
         align-items: center;
-        font-size: 0.4rem;
+        font-size: 0.7rem;
         padding: 3px;
+        margin-top: 1rem;
     }
 
     #header__logo{
@@ -41,14 +43,14 @@
         text-decoration: none;
         position: relative;
         justify-content: space-between;
-        padding: 0.5rem;
+        padding: 0.4rem;
         }
 
     .header__nav__ul--li--a{
         text-decoration: none;
         box-sizing: border-box;
         display: inline;
-        font-size: 5px;
+        font-size: 7px;
         justify-content: space-between;
     }
     
