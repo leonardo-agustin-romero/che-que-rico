@@ -605,7 +605,7 @@ footer{
     .header__h1{
         font-family: 'Titillium Web', sans-serif;
         font-style: oblique;
-        color: red;
+        color: #5d9b9b;
         text-shadow: 3px 4px 8px #5d9b9b;
         display: inline;
         align-items: center;
