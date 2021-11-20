@@ -182,21 +182,21 @@ ul.slider li:target {
 
 /*tabla de producto*/
 .main__tablaproducto {
+  width: 100%;
   padding: 20px;
-  margin: 4rem;
-  display: inline-flex;
-  justify-content: space-evenly;
-  align-items: center;
-  border: 1px solid black; }
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .main__tablaproducto tr {
+    border: 1px solid black;
     width: 100%;
     align-items: center;
     padding: 1px; }
     .main__tablaproducto tr th {
-      justify-content: space-evenly;
+      justify-content: center;
       padding: 10px; }
     .main__tablaproducto tr td {
-      justify-content: space-evenly;
+      justify-content: center;
       padding: 10px; }
 
 /*grid imagenes*/
@@ -696,17 +696,17 @@ body {
   font-family: 'Titillium Web', sans-serif;
   box-sizing: border-box; }
 
-.tortaArtesanal {
+.main__tortaArtesanal {
   display: flex;
   justify-content: center;
   align-content: space-between; }
 
 .fotoProductos {
   width: 400px;
-  height: 400px; }
-  .fotoProductos img:hover {
-    transform: scale(1.5);
-    box-shadow: 12px 20px 20px 0px #484949; }
+  height: 400px;
+  display: flex;
+  align-items: center;
+  padding: 20px; }
 
 .subTituloImagenes {
   text-align: center;
@@ -753,7 +753,8 @@ body {
 
 .subMenuProducto li {
   display: block;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  padding-left: 5px; }
   .subMenuProducto li a {
     list-style: none;
     color: black;
@@ -797,9 +798,18 @@ body {
   margin: 5px; }
 
 .submit {
-  background-color: #308130;
+  background-image: linear-gradient(to left, #B2EBF2, #E1BEE7);
   color: black;
-  border: 1px solid #308130;
+  border: 1px solid #E1BEE7;
+  padding: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 10%; }
+
+.reset {
+  background-image: linear-gradient(to left, #B2EBF2, #E1BEE7);
+  color: black;
+  border: 1px solid  #E1BEE7;
   padding: 5px;
   padding-left: 30px;
   padding-right: 30px;

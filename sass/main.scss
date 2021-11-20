@@ -116,7 +116,7 @@ body{
     box-sizing: border-box;
 }
 
-.tortaArtesanal{
+.main__tortaArtesanal{
     display: flex;
     justify-content: center;
     align-content: space-between;
@@ -126,12 +126,10 @@ body{
 
 .fotoProductos{
     @include dimenciones(400px,400px);
-    img:hover{
-        transform: scale(1.5);
-        box-shadow:12px 20px 20px 0px #484949;
-    }
+    display: flex;
+    align-items: center;
+    padding: 20px;
 }
-
 
 
 
@@ -197,6 +195,7 @@ body{
 .subMenuProducto li{
     display: block;
     margin-top: 1rem;
+    padding-left: 5px;
     a{
         list-style: none;
         color: black;
@@ -260,9 +259,19 @@ body{
 
 
 .submit{
-    background-color:map-get($coloresmaps, secundario);
+    background-image:linear-gradient(to left,#B2EBF2, #E1BEE7);
     color: black;
-    border: 1px solid map-get($coloresmaps, secundario);
+    border: 1px solid #E1BEE7;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10%;
+}
+
+.reset{
+    background-image:linear-gradient(to left,#B2EBF2, #E1BEE7);
+    color: black;
+    border: 1px solid  #E1BEE7;
     padding: 5px;
     padding-left: 30px;
     padding-right: 30px;
