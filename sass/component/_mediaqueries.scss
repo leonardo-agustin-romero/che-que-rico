@@ -114,6 +114,18 @@
 
     }
 
+    .formularioPrueba{
+        box-sizing: border-box;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .formularioPrueba div{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
     .content-all{
         width: 90%;
         margin: auto;
@@ -159,13 +171,12 @@
     .formularioPrueba{
         display: block;
         margin: 10px;
-        width: 90%;
+        width: 95%;
     }
 
     .formularioPrueba div{
         display: block;
         margin: 10px;
-        width: 90%;
         overflow: hidden;
     }
 
@@ -228,7 +239,6 @@
     .container{
         overflow: hidden;
     }
-    
     
 
 
@@ -323,7 +333,6 @@
     .formularioPrueba{
         display: block;
         margin: 10px;
-        width: 60%;
     }
 
 
@@ -448,7 +457,6 @@
     .formularioPrueba{
         display: block;
         margin: 10px;
-        width: 60%;
     }
 
 

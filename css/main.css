@@ -395,6 +395,14 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+  .formularioPrueba {
+    box-sizing: border-box;
+    align-content: center;
+    justify-content: center; }
+  .formularioPrueba div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; }
   .content-all {
     width: 90%;
     margin: auto;
@@ -423,11 +431,10 @@ footer {
   .formularioPrueba {
     display: block;
     margin: 10px;
-    width: 90%; }
+    width: 95%; }
   .formularioPrueba div {
     display: block;
     margin: 10px;
-    width: 90%;
     overflow: hidden; }
   .formularioPrueba div {
     display: block; } }
@@ -523,8 +530,7 @@ footer {
     margin: 1rem; }
   .formularioPrueba {
     display: block;
-    margin: 10px;
-    width: 60%; } }
+    margin: 10px; } }
 
 @media only screen and (max-width: 980px) and (min-width: 769px) {
   header {
@@ -603,8 +609,7 @@ footer {
     margin: 1rem; }
   .formularioPrueba {
     display: block;
-    margin: 10px;
-    width: 60%; } }
+    margin: 10px; } }
 
 .error404 {
   display: flex;
