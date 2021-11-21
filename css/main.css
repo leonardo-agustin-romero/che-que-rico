@@ -353,9 +353,8 @@ footer {
     display: block;
     font-size: 12px;
     justify-content: space-between; }
-  .header__nav__ul--li:hover .subMenuProducto {
-    display: block;
-    padding-right: 0px; }
+  .subMenuProducto {
+    right: 1px; }
   .slider {
     overflow: hidden; }
   .fotoProducto img {
@@ -736,7 +735,6 @@ body {
   position: absolute;
   display: none;
   border: solid 1px black;
-  left: 2rem;
   margin-top: 0.7rem;
   background-image: linear-gradient(to left, #B2EBF2, #E1BEE7);
   z-index: 50; }
