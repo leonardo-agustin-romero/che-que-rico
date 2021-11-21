@@ -439,6 +439,16 @@ footer {
   .formularioPrueba div {
     display: block; } }
 
+.nosotrosSeccion1 {
+  padding: 10px;
+  margin: 0rem;
+  font-size: 10px; }
+
+.nosotrosSeccion2 {
+  padding: 10px;
+  margin: 0rem;
+  font-size: 12px; }
+
 @media only screen and (max-width: 768px) and (min-width: 481px) {
   header {
     display: flex;
@@ -703,6 +713,15 @@ body {
   display: flex;
   justify-content: center; }
 
+/*seccion de nosotros*/
+.nosotrosSeccion1 {
+  padding: 40px;
+  font-size: 1.2rem; }
+
+.nosotrosSeccion2 {
+  padding: 40px;
+  font-size: 1.2rem; }
+
 .mediosPagos {
   box-sizing: border-box;
   position: relative;
@@ -763,15 +782,6 @@ body {
 
 .header__nav__ul--li:hover .subMenuProducto {
   display: block; }
-
-/*seccion de nosotros*/
-.nosotrosSeccion1 {
-  padding: 20px;
-  margin: 4rem; }
-
-.nosotrosSeccion2 {
-  padding: 20px;
-  margin: 4rem; }
 
 .subMenuProducto li {
   display: block;
