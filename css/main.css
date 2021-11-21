@@ -183,21 +183,24 @@ ul.slider li:target {
 /*tabla de producto*/
 .main__tablaproducto {
   width: 100%;
-  padding: 20px;
+  padding: 5px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  font-size: 1rem; }
   .main__tablaproducto tr {
     border: 1px solid black;
     width: 100%;
     align-items: center;
-    padding: 1px; }
+    font-size: 1rem; }
     .main__tablaproducto tr th {
       justify-content: center;
-      padding: 10px; }
+      padding: 5px;
+      font-size: 1rem; }
     .main__tablaproducto tr td {
       justify-content: center;
-      padding: 10px; }
+      padding: 5px;
+      font-size: 1rem; }
 
 /*grid imagenes*/
 .fotoTematicas {
@@ -368,6 +371,13 @@ footer {
     margin-left: 0.2rem;
     display: flex;
     justify-content: space-evenly; }
+  .main__tortaArtesanal {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+    .main__tortaArtesanal img {
+      display: block;
+      width: 100%; }
   .subTematica img {
     width: 56px;
     height: 56px; }

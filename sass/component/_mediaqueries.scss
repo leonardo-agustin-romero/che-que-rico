@@ -77,6 +77,16 @@
         justify-content: space-evenly;
     }
 
+    .main__tortaArtesanal{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+
     .subTematica img{
         width: 56px;
         height: 56px;
