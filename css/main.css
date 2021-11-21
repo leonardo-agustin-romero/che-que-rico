@@ -353,6 +353,9 @@ footer {
     display: block;
     font-size: 12px;
     justify-content: space-between; }
+  .header__nav__ul--li:hover .subMenuProducto {
+    display: block;
+    padding-right: 0px; }
   .slider {
     overflow: hidden; }
   .fotoProducto img {
