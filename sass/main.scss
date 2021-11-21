@@ -88,10 +88,17 @@ body{
 
 .MapaUbicacion{
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding-top: 2rem;
+}
+
+.nosotrosSeccion1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -243,11 +250,8 @@ body{
 .formularioPrueba{
     box-sizing: border-box;
     @extend %flexboxrow;
-    width: 40%;
-    margin: 1rem;
-    padding: 1rem;
     align-content: center;
-    margin-left: 30%;
+    justify-content: center;
 }
 
 .formularioPrueba div{
@@ -257,6 +261,9 @@ body{
     margin: 5px;
 }
 
+.formLetra{
+    font-size: 0.8rem;
+}
 
 .submit{
     background-image:linear-gradient(to left,#B2EBF2, #E1BEE7);
