@@ -30,6 +30,22 @@
     }
 }
 
+.subTematica{
+    width: 100px;
+    @extend %flexboxrow;
+    img{
+        width: 200px;
+        height: 200px;
+    }
+    h2{
+        padding: 10px 0;
+        font-size: 20px;
+    }
+    p{
+        padding: 10px 0;
+        font-size: 16px;
+    }
+}
 
 
 .card1{

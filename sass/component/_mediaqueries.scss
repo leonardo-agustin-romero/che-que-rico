@@ -63,18 +63,19 @@
     }
     
     .fotoProducto img{
-        display: inline;
         box-sizing: border-box;
         position: relative;
-        width: 4rem;
-        height: 4rem;
-        border-radius: 5%;
+        border-radius: 10%;
+        padding: 10px;
     }
 
     .fotoProducto{
-        margin-left: 0.2rem;
+        width: 100%;
+        margin: 0px;
         display: flex;
-        justify-content: space-evenly;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .main__tortaArtesanal{
@@ -87,33 +88,66 @@
         }
     }
 
-    .subTematica img{
-        width: 56px;
-        height: 56px;
-    }
-    
-    .subTematica h2{
-        text-align: center;
-        padding: 3px 0;
-        font-size: 8px;
-    }
-    
-
-    .subTematica p{
-        text-align: center;
-        padding: 10px 0;
-        font-size: 4px;
-    }
-    
-    .subTematica{
-        width: 80px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .fotoTematicas{
+        width: 100%;
+        display: grid;
+        justify-items: center;
         align-items: center;
-
+        grid-template-areas:
+        "foto1"
+        "foto2"
+        "foto3" 
+        "foto4"
+        "foto5" 
+        "foto6"
+        "foto7" 
+        "foto8"
+        "foto9" 
+        "foto10"
+        "foto11" 
+        "foto12"
+        "foto13" 
+        "foto14"
+        "foto15" 
+        "foto16";
+        grid-template-rows: repeat(16, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 90px;
+        margin-bottom: 90px;
+        img{
+            transition: all 1s;
+            border-radius: 5%;
+            &:hover{
+                transform: scale(1.1);
+                box-shadow:12px 20px 20px 0px #484949;
+            }
+        }
     }
+    
 
+
+    
+    .subTematicas{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 56px;
+            height: 56px;
+        }
+        h2{
+            text-align: center;
+            padding: 5px 0;
+            font-size: 12px;
+        }
+        p{
+            text-align: center;
+            padding: 5px 0;
+            font-size: 10px;
+        }
+    }
+    
     .formularioPrueba{
         box-sizing: border-box;
         align-content: center;
@@ -268,6 +302,47 @@
         display: flex;
         justify-content: space-evenly;
     }
+
+    .fotoProducto{
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    
+    .fotoTematicas{
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:
+        "foto1 foto2"
+        "foto3 foto4"
+        "foto5 foto6"
+        "foto7 foto8"
+        "foto9 foto10"
+        "foto11 foto12"
+        "foto13 foto14"
+        "foto15 foto16";
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 90px;
+        margin-bottom: 90px;
+        img{
+            transition: all 1s;
+            border-radius: 5%;
+            &:hover{
+                transform: scale(1.1);
+                box-shadow:12px 20px 20px 0px #484949;
+            }
+        }
+    }
+    
 
 
 
