@@ -170,7 +170,7 @@
         overflow: hidden;
     }
     
-    .content-carrousel img{
+    .content-carrousel figure{
         width: 60%;
         
     }
@@ -344,7 +344,19 @@
     }
     
 
-
+    .content-all{
+        width: 65%;
+        margin: auto;
+        perspective: 1000px;
+        position: relative;
+        margin-top: 150px;
+        height: 200px;
+    }
+    
+    .content-carrousel figure{
+        width: 40%;
+        
+    }
 
     .subTematica img{
         width: 80px;
@@ -377,19 +389,6 @@
         align-items: center;
     }
     
-    .content-all{
-        width: 100%;
-        margin: auto;
-        perspective: 1000px;
-        position: relative;
-        margin-top: 150px;
-        height: 200px;
-    }
-    
-    .content-carrousel img{
-        width: 100%;
-        
-    }
     
     .videoChericos video1{
         width: 200px;
@@ -493,7 +492,7 @@
     
 
     .fotoProducto img{
-        display: inline;
+        display: block;
         box-sizing: border-box;
         position: relative;
         width: 8rem;
@@ -502,8 +501,7 @@
     }
     
     .fotoProducto{
-        margin-left: 1rem;
-        display: flex;
+        display: block;
         justify-content: space-evenly;
     }
 
@@ -522,7 +520,6 @@
     }
     
     .content-all{
-        width: 100%;
         margin: auto;
         perspective: 1000px;
         position: relative;
@@ -544,6 +541,36 @@
         display: block;
         margin: 10px;
     }
+
+    .fotoTematicas{
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:
+        "foto1 foto2"
+        "foto3 foto4"
+        "foto5 foto6"
+        "foto7 foto8"
+        "foto9 foto10"
+        "foto11 foto12"
+        "foto13 foto14"
+        "foto15 foto16";
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 90px;
+        margin-bottom: 90px;
+        img{
+            transition: all 1s;
+            border-radius: 5%;
+            &:hover{
+                transform: scale(1.1);
+                box-shadow:12px 20px 20px 0px #484949;
+            }
+        }
+    }
+    
 
 
 }
